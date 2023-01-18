@@ -7,7 +7,7 @@
 import random
 
 
-def find_odd_numbers(list_of_numbers):
+def find_odd_positions(list_of_numbers):
     # this function prints the odd numbers
 
     odd_numbers = []
@@ -42,7 +42,7 @@ def main():
                 )
                 loop_counter += 1
 
-            odd_numbers = find_odd_numbers(list_of_numbers)
+            odd_numbers = find_odd_positions(list_of_numbers)
 
             print("\nThe numbers in odd positions in the list are : ", end="")
             for list_item in odd_numbers:
