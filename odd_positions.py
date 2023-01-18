@@ -2,7 +2,7 @@
 
 # Created by: Kaitlyn Ip
 # Created on: Jan 2023
-# This program prints the odd numbers in a list of 10 random numbers
+# This program prints the odd numbers in a list
 
 import random
 
@@ -22,7 +22,7 @@ def find_odd_numbers(list_of_numbers):
 
 
 def main():
-    # this function creates 10 random numbers in a list
+    # this function creates random numbers in a list
 
     list_of_numbers = []
 
@@ -48,9 +48,9 @@ def main():
             for list_item in odd_numbers:
                 print("{0} ".format(list_item), end="")
         else:
-            print("\nThat is a negative input, please try again.")
-    except Exception:
-        print("\nThat is not a valid input, please try again.")
+            print("\nThat is a negative input.")
+    except ValueError:
+        print("\nThat is not a valid input.")
 
     print("")
     print("\nDone.")
